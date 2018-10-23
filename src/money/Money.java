@@ -1,13 +1,10 @@
 package money;
 
-/**
- * Created by Stud on 27.09.2018.
- */
 public class Money {
     public Money(double value, Currency moneyCurrency) {
-    this.value = value;
-    this.moneyCurrency = moneyCurrency;
-}
+        this.value = value;
+        this.moneyCurrency = moneyCurrency;
+    }
 
     public double value;
     public Currency moneyCurrency;
@@ -30,8 +27,9 @@ public class Money {
 
     @Override
     public String toString() {
-        return "" +
-                "" + value +
-                " " + moneyCurrency;
+        return  value +
+                ", " +
+                moneyCurrency;
     }
 }
+

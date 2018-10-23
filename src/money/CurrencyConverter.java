@@ -1,8 +1,4 @@
 package money;
-
-/**
- * Created by Stud on 27.09.2018.
- */
 public class CurrencyConverter {
     private final double unitUSD;
     private final double unitRUB;
@@ -15,9 +11,8 @@ public class CurrencyConverter {
     }
 
     public Money convertByCurrencty(Money money, Currency convertToCurrency) {
-        //��������� �� ���������� �������� ������ � ������, � ������� ������������
+
         if (money.moneyCurrency != convertToCurrency) {
-            //���� �������������� ������ �� ����� �������� ����� ����������� ��������� � �������� ������
 
             Money returnMoney = new Money(0, convertToCurrency);
             double unitValue = 0;

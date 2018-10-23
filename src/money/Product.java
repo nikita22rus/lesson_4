@@ -1,8 +1,6 @@
 package money;
 
-/**
- * Created by Stud on 27.09.2018.
- */
+
 public class Product {
     private String productName;
     public Money price;
