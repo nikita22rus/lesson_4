@@ -1,35 +1,21 @@
-package money;
 
+/**
+ * Класс деньги, содержит значение и валюту
+ */
 public class Money {
-    public Money(double value, Currency moneyCurrency) {
+    public Money(double value, Main.Currency moneyCurrency) {
         this.value = value;
         this.moneyCurrency = moneyCurrency;
     }
 
     public double value;
-    public Currency moneyCurrency;
-
-    public double getValue() {
-        return value;
-    }
-
-    public void setValue(double value) {
-        this.value = value;
-    }
-
-    public Currency getMoneyCurrency() {
-        return moneyCurrency;
-    }
-
-    public void setMoneyCurrency(Currency moneyCurrency) {
-        this.moneyCurrency = moneyCurrency;
-    }
+    public Main.Currency moneyCurrency;
 
     @Override
     public String toString() {
-        return  value +
-                ", " +
-                moneyCurrency;
+        return "Money{" +
+                "" + value +
+                " " + moneyCurrency +
+                '}';
     }
 }
-

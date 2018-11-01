@@ -1,8 +1,10 @@
-package money;
 
-
+/**
+ * Класс продукт, содержит имя и цену
+ */
 public class Product {
-    private String productName;
+
+    public String productName;
     public Money price;
 
     public Product(String productName, Money price) {
@@ -10,26 +12,11 @@ public class Product {
         this.price = price;
     }
 
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public Money getPrice() {
-        return price;
-    }
-
-    public void setPrice(Money price) {
-        this.price = price;
-    }
-
     @Override
     public String toString() {
-        return  productName +
-                ", price=" + price;
+        return "Product{" +
+                "productName='" + productName + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
